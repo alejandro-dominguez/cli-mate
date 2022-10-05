@@ -52,11 +52,25 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 shadow-lg content-2">
-                    <div class="d-flex flex-column align-items-center p-3">
-                        <p id="city-name"></p>
-                        <img id="weather-img" src="" alt="" class="mb-3">
+                    <div class="d-flex flex-column align-items-start p-3">
+                        <p id="city-name" class="city-name"></p>
                         <p id="city-temp"></p>
-                        <p id="city-weather"></p>
+                        <div class="weather row align-items-baseline mb-3">
+                            <img id="weather-img" class="weather-img" src="" alt="">
+                            <p id="city-weather"></p>
+                        </div>
+                        <div class="data row justify-content-between">
+                            <div class="data-weather col-8 d-flex flex-column align-items-start
+                                justify-content-between">
+                                <p id="city-humidity" class="mt-3"></p>
+                                <p id="city-wind" class="mt-2"></p>
+                            </div>
+                            <div class="data-date col-4 d-flex flex-column align-items-start
+                                justify-content-between">
+                                <p id="date" class="mt-4"></p>
+                                <p id="current-date" class="mt-2"></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
