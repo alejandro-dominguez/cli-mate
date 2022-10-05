@@ -189,12 +189,20 @@ footer a {
     margin: 0 20rem;
   }
 }
+@media only screen and (max-width: 1000px) {
+  #city-weather {
+    margin: 0 0 0 6.5rem;
+  }
+  .data {
+    margin-top: 1rem;
+  }
+}
 @media only screen and (max-width: 880px) {
   .content-1 {
-    height: 74vh;
+    height: 76vh;
   }
   .content-2 {
-    height: 74vh;
+    height: 76vh;
   }
   .data {
     display: flex;
@@ -228,11 +236,17 @@ footer a {
     width: 10rem;
   }
   .content-2 {
-    height: 68vh;
+    height: 64vh;
     border-radius: 0 0 1rem 1rem;
+  }
+  #city-weather {
+    font-size: 1.25rem;
   }
   .weather-img {
     width: 10rem;
+  }
+  .data {
+    margin-top: 1.5rem;
   }
   .footer {
     margin: 1.5rem 0;
@@ -253,17 +267,12 @@ footer a {
     border-radius: 0 0 1rem 1rem;
   }
   .content-2 {
-    height: 75vh;
+    height: 74vh;
     border-radius: 1rem 1rem 0 0;
   }
 }
 @media only screen and (max-width: 353px) {
   .content-1 {
     height: 70vh;
-  }
-}
-@media only screen and (max-width: 331px) {
-  #city-weather {
-    margin: 0 0 0 6.5rem;
   }
 }

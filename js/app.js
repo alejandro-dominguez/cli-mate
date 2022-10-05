@@ -78,7 +78,8 @@ const defaultError = () => {
     $(".spinner").hide()
     $("#city-name").removeClass("city-name")
     $("#city-name").addClass("error")
-    $("#city-name").text("¡Ups! Lo sentimos mucho, ha ocurrido un problema al conectarnos con el servidor. Intenta refrescar la página.")
+    $("#city-name").text(
+    "¡Ups! Lo sentimos mucho, ha ocurrido un problema al conectarnos con el servidor. Intenta refrescar la página.")
     $("#weather-img").removeClass("weather-img")
     $("#weather-img").addClass("img-error")
     $("#weather-img").attr("src", "./images/error.svg")
