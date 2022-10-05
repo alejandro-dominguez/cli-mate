@@ -1,0 +1,198 @@
+// fonts //
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// variables //
+
+@main-font: "Poppins", sans-serif;
+@main-color: #5139ae;
+@secondary-color: #f7941e;
+@background-color: #d4daec;
+@white: #fff;
+@black: #000;
+
+// mixins //
+
+.content{
+    height: 70vh;
+}
+
+.text{
+    text-align: center;
+}
+
+// styles //
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    background-color: @background-color;
+    font-family: @main-font;
+}
+
+p{
+    .text();
+}
+
+.navbar-brand{
+    font-size: 2rem;
+}
+
+.form-control {
+    border: none;
+}
+
+button{
+    font-size: 1.4rem;
+    padding: 0 0.75rem;
+    border: none;
+    background-color: @secondary-color;
+    color: @white;
+    border-radius: 0.25rem;
+}
+
+main{
+    min-height: calc(100vh - 170px);
+}
+
+.content-1{
+    .content();
+    background-color: @white;
+    border-radius: 1rem 0 0 1rem;
+
+    &-img{
+        width: 75%;
+    }
+
+    &-p{
+        text-align: left;
+    }
+}
+
+.content-2{
+    .content();
+    background-color: @main-color;
+    color: @white;
+    border-radius: 0 1rem 1rem 0;
+    font-size: 1.3rem;
+}
+
+#weather-img{
+    width: 15rem;
+    filter: drop-shadow(0.25rem 0.25rem 0.25rem #2a2a2a);
+}
+
+.footer{
+
+    &-img{
+        width: 3rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    
+        &:hover, &:focus{
+            transform: scale(1.05);
+        }
+    }
+
+    &-logo{
+        width: 3rem;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    
+        &:hover, &:focus{
+            transform: scale(1.05);
+        }
+    }
+}
+
+footer{
+
+    div{
+
+        div{
+            width: fit-content!important;
+        }
+    }
+
+    p{
+        width: fit-content!important;
+        margin-bottom: 0;
+    }
+    
+    a{
+        display: contents;
+    }
+}
+
+// media queries //
+
+@media only screen and (min-width: 2000px){
+
+    .body-container{
+        margin: 0 20rem;
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    .content-1{
+        height: 48vh;
+        border-radius: 1rem 1rem 0 0;
+    
+        &-img{
+            width: 10rem;
+        }
+    }
+
+    .content-2{
+        height: 57vh;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    #weather-img{
+        width: 10rem;
+    }
+
+    .footer{
+        margin: 1.5rem 0;
+        flex-direction: column;
+        gap: 1rem;
+
+        div{
+            flex-direction: column;
+            gap: 0.5rem!important;
+        }
+    }
+}
+
+@media only screen and (max-width: 452px){
+
+    .main{
+        flex-direction: column-reverse;
+    }
+
+    .content-1{
+        height: 60vh;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .content-2{
+        border-radius: 1rem 1rem 0 0;
+    }
+}
+
+@media only screen and (max-width: 353px){
+
+    .content-1{
+        height: 70vh;
+    }
+}
