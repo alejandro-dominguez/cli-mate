@@ -10,4 +10,5 @@ Bootstrap.
 # Conceptos trabajados
 Algunas de las habilidades que he trabajado en este proyecto son:
 - Recuperar datos de una API de clima para generar el contenido de la página y las interacciones.
+- Utilizar funciones de Jquery para gestionar el DOM.
 - Animar el fondo de la página utilizando una animación de CSS con gradientes.
