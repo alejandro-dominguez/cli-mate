@@ -5,10 +5,10 @@ const appId = "a20cca282f35b96f384a5385a3120a48";
 
 $(document).ready(function() {
     navigator.geolocation ?
-        ($(".spinner").show(),
+    ($(".spinner").show(),
         navigator.geolocation.getCurrentPosition(function(position){
         defaultWeather(position)})
-        ) : null
+    ) : null
 
     $("#form").submit(function(event, appId) {
         $(".spinner").show()
@@ -57,7 +57,11 @@ const renderWeather = (response) => {
     let cityHumidity = response.main.humidity
     let cityWind = response.wind.speed
 
+    $("#city-name").removeClass("error")
+    $("#city-name").addClass("city-name")
     $("#city-name").text(`El clima en ${cityName}`)
+    $("#weather-img").removeClass("img-error")
+    $("#weather-img").addClass("weather-img")
     $("#weather-img").attr("src", imgUrl)
     $("#weather-img").attr("alt", cityWeather)
     $("#city-temp").text(`${cityTemp} C°`)
@@ -136,7 +140,11 @@ const renderResult = (response) => {
     let cityHumidity = response.main.humidity
     let cityWind = response.wind.speed
 
-    $("#city-name").text(cityName)
+    $("#city-name").removeClass("error")
+    $("#city-name").addClass("city-name")
+    $("#city-name").text(`El clima en ${cityName}`)
+    $("#weather-img").removeClass("img-error")
+    $("#weather-img").addClass("weather-img")
     $("#weather-img").attr("src", imgUrl)
     $("#weather-img").attr("alt", cityWeather)
     $("#city-temp").text(`${cityTemp} C°`)
