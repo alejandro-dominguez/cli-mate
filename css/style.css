@@ -86,6 +86,7 @@ main {
   color: #fff;
   border-radius: 0 1rem 1rem 0;
   font-size: 1.3rem;
+  position: relative;
 }
 .city-name {
   text-align: left;
@@ -164,11 +165,11 @@ footer a {
   display: contents;
 }
 .spinner {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .error {
   text-shadow: 0.075rem 0.075rem #f7941e;
