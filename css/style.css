@@ -109,7 +109,7 @@ main {
 }
 .weather-img {
   position: absolute;
-  left: -2rem;
+  left: -1.5rem;
   top: -2rem;
   width: 10rem;
   filter: drop-shadow(0.2rem 0.2rem 0.25rem #2a2a2ae2);
@@ -241,6 +241,7 @@ footer a {
   }
   #city-weather {
     font-size: 1.25rem;
+    margin: 1rem 0 0 6.5rem;
   }
   .weather-img {
     width: 10rem;
